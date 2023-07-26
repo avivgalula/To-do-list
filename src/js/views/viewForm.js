@@ -3,15 +3,20 @@ class viewForm {
 
   getContent() {
     const content = this._parentElement.querySelector(".to-do-input").value;
-    return;
-    content;
+    this._clearInput();
+    return content;
   }
 
-  addHandlerForm(handler) {
+  _clearInput() {
+    this._parentElement.querySelector(".to-do-input").value = "";
+  }
+
+  addHandlerFormSubmit(handler) {
     this._parentElement.addEventListener("submit", (e) => {
+      e.preventDefault();
       handler();
     });
   }
 }
 
-export default viewForm;
+export default new viewForm();
