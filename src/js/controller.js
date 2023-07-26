@@ -31,8 +31,12 @@ const controlDelete = function (id) {
   viewList.render(model.state.toDoList);
 };
 
-const init = function () {
+const controlList = function () {
   viewList.render(model.state.toDoList);
+};
+
+const init = function () {
+  viewList.addhandlerRender(controlList);
   viewForm.addHandlerFormSubmit(controlForm);
   viewToDo.addHandlerStatusToggle(controlToDoStatus);
   viewToDo.addHandlerDelete(controlDelete);

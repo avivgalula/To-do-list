@@ -12,7 +12,6 @@ export const addToDo = function (content) {
     id: state.toDoList.length + 1,
     done: false,
   };
-  console.log(toDo);
 
   state.toDoList = [...state.toDoList, toDo];
 

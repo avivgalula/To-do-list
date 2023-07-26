@@ -2,6 +2,10 @@ class viewList {
   _data;
   _parentElement = document.querySelector(".to-do-list");
 
+  addhandlerRender(handler) {
+    window.addEventListener("load", handler);
+  }
+
   render(data) {
     this._data = data;
     const markup = this._generateMarkup();
