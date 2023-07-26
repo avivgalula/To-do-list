@@ -1,0 +1,16 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "A to-do-list web application using JavaScript",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm": "^9.8.1",
+    "parcel": "^2.9.3"
+  }
+}
