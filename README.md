@@ -1,2 +1,2 @@
 # To-do-list
-A to-do-list web application using JavaScript
+A to-do-list web application using vanilla js
